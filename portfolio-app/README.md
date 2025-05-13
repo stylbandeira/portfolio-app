@@ -23,3 +23,8 @@ Portfólio
   - ``php artisan migrate``
 - Abra o phpmyadmin para conferir:
   - http://localhost:8080/
+
+## Outros passos
+
+- Instalei o breeze: ``composer require laravel/breeze``
+- Defini o front do breeze como react: ``php artisan breeze:install react``
