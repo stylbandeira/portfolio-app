@@ -4,15 +4,15 @@ Portfólio
 ## Como iniciar
 - Entre na raiz do projeto **portfolio-app**
 - Instale as dependências: 
-  - ``composer install``
+    ``composer install``
 - Crie um .env baseado no .env.example:
-  - ``cp .env.example .env``
+    ``cp .env.example .env``
 - Gere uma chave nova para o laravel:
-  - ``php artisan key:generate``
+    ``php artisan key:generate``
 - Inicie o docker:
-  - ``docker compose up -d``
+    ``docker compose up -d``
 - Entre no container:
-  - ``docker compose exec -it app bash``
+    ``docker compose exec -it app bash``
 > O 'app' no comando pode ser substituído pelo nome do container,
 >
 > caso isso seja feito, o 'compose' se torna dispensável.
