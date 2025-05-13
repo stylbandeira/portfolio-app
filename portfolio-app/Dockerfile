@@ -37,6 +37,10 @@ RUN mkdir -p /var/www/html/storage \
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html/storage
 
+# Instalar o node no container
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    apt-get install -y nodejs
+
 # Expor a porta 80
 EXPOSE 80
 
