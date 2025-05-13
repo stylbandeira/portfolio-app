@@ -18,3 +18,8 @@ Portfólio
 > caso isso seja feito, o 'compose' se torna dispensável.
 
 
+## Inicializando o banco de dados
+- Dentro do container, execute o comando para fazer as migrations iniciais
+  - ``php artisan migrate``
+- Abra o phpmyadmin para conferir:
+  - http://localhost:8080/
