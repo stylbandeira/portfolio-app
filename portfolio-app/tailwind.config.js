@@ -17,6 +17,7 @@ module.exports = {
             },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                bebas: ['"Bebas Neue"', 'sans-serif'],
             },
         },
     },
