@@ -1,5 +1,5 @@
-# portfolio-app
-Portfólio
+# PORTFOLIO-APP
+Portfólio e estudo de React com Laravel
 
 ## Como iniciar
 - Entre na raiz do projeto **portfolio-app**
@@ -31,6 +31,8 @@ Portfólio
 - Defini o front do breeze como react: 
   - ``php artisan breeze:install react``
 - Adicionei a instalação do Node no container, dentro do Dockerfile: 
-  - ``RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \apt-get install -y nodejs``
+  - ``RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \ apt-get install -y nodejs``
   - Após isso, buildei novamente o container:
-  * ``docker compose down`` / ``docker compose up --build``
+  - ``docker compose down`` / ``docker compose up --build``
+  - Dentro do container:
+  - ``npm install`` & ``npm run dev``

@@ -7,11 +7,12 @@ services:
       dockerfile: Dockerfile
     container_name: portfolio-app
     ports:
-      - "8000:8000"
+      - "8001:8000"
+      - "5173:5173"
     volumes:
       - ./:/var/www/html
     working_dir: /var/www/html
-    command: php artisan serve --host=0.0.0.0 --port=8000
+    command: sh -c "php artisan serve --host=0.0.0.0 --port=8000 & npm run dev"
     environment:
       - APACHE_RUN_USER=www-data
       - APACHE_RUN_GROUP=www-data
